@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Comi 34645</title>
+</head>
+<body>
+    <h1>EXCELENTE ES MUY FACIL USAR PLANTILLAS!!</h1>
+    <h3>Estamos en el curso de django de la 34645</h3>
+    <p>Nombre = {{ nombre }} </p>
+    <p>Apellido = {{ apellido}} </p>
+    <p>Edad = {{ edad }} </p>
+    <h4>Lista de notas</h4>
+    <ul>
+        {% for nota in lista_de_notas %}
+            {% if nota > 6 %}
+            <li style="color: green;"> NOTA APROBADA: {{nota}} </li>
+            {% else %}
+            <li style="color: red;"> NOTA DESAPROBADA: {{nota}} </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+
+
+    <h4>LISTA DE ALUMNOS</h4>
+</body>
+</html>
